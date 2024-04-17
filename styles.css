@@ -185,12 +185,12 @@ span {
 
 .home-img {
     border-radius: 50%;
-    margin-top: 60px; /* Adjust this value as needed */
+    margin-top: 50px; /* Adjust this value as needed */
 }
 
 .home-img img {
     position: relative;
-    top: 3rem;
+    top: 4rem;
     width: 32vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
@@ -212,7 +212,6 @@ span {
     line-height: 1.5;
     max-width: 1000px;
 }
-
 
 .social-icon a {
     display: inline-flex;
@@ -345,7 +344,7 @@ span {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        gap: 2rem;
         margin-top: 50px
     }
 
