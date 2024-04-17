@@ -12,7 +12,7 @@
 }
 
 :root {
-    --bg-color: #101011;
+    --bg-color: #191f36;
     --snd-bg-color: #262840;
     --text-color: #fff;
     --main-color: #59b2f4;
@@ -548,7 +548,7 @@ span {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background: var(--bg-color);
+    background: var(--snd-bg-color);
     padding-bottom: 4rem;
 }
 
@@ -1460,7 +1460,7 @@ span {
     height: 100vh;
     min-height: auto;
     padding-bottom: 4rem;
-    background: var(--bg-color)
+    background:var(--snd-bg-color)
 }
 
 .skills h2 {
@@ -1715,13 +1715,12 @@ span {
 /* EDUCATION Section Styles */
 
 .education {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-height: auto;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     background: var(--bg-color);
 }
 
@@ -1816,8 +1815,8 @@ span {
 @media screen and (max-width: 480px) {
     .education {
         padding-bottom: 3rem;
-        max-height: 140vh;
-        margin-top: 100vh;
+       
+        margin-top: 6rem;
     }
 
     .education h2 {
@@ -1847,9 +1846,9 @@ span {
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .education {
-        padding-bottom: 4rem;
-        max-height: 140vh;
-        margin-top: 100vh;
+        padding-bottom: 3rem;
+       
+        margin-top: 6rem;
     }
 
     .education h2 {
@@ -1879,9 +1878,9 @@ span {
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
     .education {
-        padding-bottom: 5rem;
-        max-height: 140vh;
-        margin-top: 100vh;
+        padding-bottom: 3rem;
+       
+        margin-top: 6rem;
 
     }
 
@@ -1913,8 +1912,8 @@ span {
 @media screen and (min-width: 1280px) {
     .education {
         padding-bottom: 6rem;
-        min-height: 140vh; 
-        margin-top: 100vh;
+       
+        margin-top: 6rem;
 
     }
 
@@ -1956,7 +1955,7 @@ span {
     gap: 3rem;
     padding-left: 30px;
     margin-top: 130px;
-    background: var(--bg-color)
+    background: var(--snd-bg-color);
 }
 
 .contact-text h2 {
@@ -2002,7 +2001,7 @@ span {
 }
 
 .contact-text p {
-    color: var(--bg-color);
+    color: var(--snd-bg-color);
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 3rem;
