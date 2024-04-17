@@ -94,20 +94,29 @@ html::-webkit-scrollbar-thumb {
     display: none;
 }
 
+section {
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+
+
+/* HOME RESPONSIVENESS */
+
 @media (max-width:995px) {
     .menu-icon {
        display: block;
     }
     .navbar {
         position: absolute;
-        top: 100%;
+        top: 102%;
         right: 0;
-        width: 40;
+        width: 100;
         border-left: 3px solid var(--main-color);
         border-bottom: 3px solid var(--main-color);
-        border-bottom-left-radius: 2rem;
-        padding: 1rem 3%;
+        border-bottom-left-radius: 5rem;
+        padding: 1rem 10%;
         background-color:  var(--snd-bg-color);
+
         border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
         display: none;
     }
@@ -127,11 +136,6 @@ html::-webkit-scrollbar-thumb {
         border-bottom: 0.5rem solid var(--main-color);
     }
 
-}
-
-section {
-    min-height: 100vh;
-    padding: 10rem 12% 10rem;
 }
 
 /* Home Section Styles */
@@ -512,7 +516,6 @@ span {
 
 .about {
     text-align: center;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -661,11 +664,12 @@ span {
 
 }
 
-/* HOME RESPONSIVENESS */
+/* ABOUT RESPONSIVENESS */
 
 @media screen and (max-width: 480px) {
     .about {
         padding-bottom: 3rem;
+        margin-top: 50vh;
     }
 
     .about h2 {
@@ -724,6 +728,7 @@ span {
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .about {
         padding-bottom: 4rem;
+        margin-top: 50vh;
     }
 
     .about h2 {
@@ -782,6 +787,7 @@ span {
 @media screen and (min-width: 769px) and (max-width: 1279px) {
     .about {
         padding-bottom: 5rem;
+        margin-top: 50vh;
     }
 
     .about h2 {
@@ -840,6 +846,7 @@ span {
 @media screen and (min-width: 1280px) {
     .about {
         padding-bottom: 6rem;
+        margin-top: 50vh;
     }
 
     .about h2 {
@@ -1102,6 +1109,7 @@ span {
 @media screen and (max-width: 480px) {
     .services {
         padding-bottom: 3rem;
+        margin-top: 50vh;
     }
 
     .services h2 {
@@ -1181,6 +1189,7 @@ span {
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .services {
         padding-bottom: 4rem;
+        margin-top: 50vh;
     }
 
     .services h2 {
@@ -1260,6 +1269,7 @@ span {
 @media screen and (min-width: 769px) and (max-width: 1279px) {
     .services {
         padding-bottom: 5rem;
+        margin-top: 50vh;
     }
 
     .services h2 {
@@ -1339,6 +1349,7 @@ span {
 @media screen and (min-width: 1280px) {
     .services {
         padding-bottom: 5rem;
+        margin-top: 50vh;
     }
 
     .services h2 {
@@ -1548,6 +1559,7 @@ span {
         width: 100%;
         max-height: 100vh;
         margin-bottom: 6rem; 
+        margin-top: 50vh;
     }
     .skills-column .title, 
     .skills-content .progress h3 {
@@ -1592,6 +1604,7 @@ span {
     .skills {
         padding-bottom: 4rem;
         max-height: 140vh;
+        margin-top: 50vh;
     }
 
     .skills h2 {
@@ -1619,6 +1632,7 @@ span {
     .skills {
         padding-bottom: 5rem;
         min-height: 140vh; 
+        margin-top: 50vh;
     }
 
     .skills h2 {
@@ -1646,6 +1660,7 @@ span {
     .skills {
         padding-bottom: 6rem;
         min-height: 140vh; 
+        margin-top: 50vh;
     }
 
     .skills h2 {
@@ -2139,7 +2154,7 @@ span {
         justify-content: center;
         padding-left: 15px;
         margin-top: 65px;
-        margin-top: 100vh;
+        margin-top: 70vh;
 
     }
 
@@ -2272,7 +2287,7 @@ span {
         justify-content: center;
         padding-left: 15px;
         margin-top: 65px;
-        margin-top: 100vh;
+        margin-top: 70vh;
 
     }
 
