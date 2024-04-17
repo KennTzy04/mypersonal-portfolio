@@ -1434,8 +1434,8 @@ span {
 /* SKILLS Section Styles */
 
 .skills {
-    max-height: 200vh;
-    height: 140vh;
+    max-height: 300vh;
+    height: 150vh;
     min-height: auto;
     padding-bottom: 4rem;
     background:var(--snd-bg-color);
@@ -1564,6 +1564,7 @@ span {
         flex: 0 0 auto; 
         width: 100%;
         margin-bottom: 6rem; 
+    
         
     }
     .skills-column .title, 
@@ -1609,8 +1610,8 @@ span {
     .skills {
         padding-bottom: 4rem;
         height: 100px;
-        max-height: 200vh;
-        height: 140vh;
+        max-height: 300vh;
+        height: 150vh;
     }
 
     .skills h2 {
@@ -1637,8 +1638,8 @@ span {
 @media screen and (min-width: 769px) and (max-width: 1279px) {
     .skills {
         padding-bottom: 5rem;
-        max-height: 200vh;
-        height: 140vh;
+        max-height: 300vh;
+        height: 150vh;
     }
 
     .skills h2 {
@@ -1665,8 +1666,8 @@ span {
 @media screen and (min-width: 1280px) {
     .skills {
         padding-bottom: 6rem;
-        max-height: 200vh;
-        height: 140vh;
+        max-height: 300vh;
+        height: 150vh;
     }
 
     .skills h2 {
@@ -1795,7 +1796,7 @@ span {
 @media screen and (max-width: 480px) {
     .education {
         padding-bottom: 3rem;
-        min-height: 100vh; 
+        min-height: 120vh; 
         margin-top: 100vh;
     }
 
