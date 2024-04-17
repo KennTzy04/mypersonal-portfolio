@@ -185,7 +185,7 @@ span {
 
 .home-img {
     border-radius: 50%;
-    margin-top: 30px; /* Adjust this value as needed */
+    margin-top: 60px; /* Adjust this value as needed */
 }
 
 .home-img img {
@@ -197,7 +197,7 @@ span {
     cursor: pointer;
     transition: 0.4s ease;
     height: auto;
-    margin-bottom: 10px; /* Adjust this value as needed */
+    margin-bottom: 20px; /* Adjust this value as needed */
 }
 
 .home-img img:hover {
