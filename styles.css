@@ -108,7 +108,7 @@ section {
     }
     .navbar {
         position: absolute;
-        top: 100%;
+        top: 102%;
         right: 0;
         width: 100;
         border-left: 3px solid var(--main-color);
@@ -184,7 +184,7 @@ span {
 }
 
 .home-img {
-    border-radius: 40%;
+    border-radius: 50%;
     margin-top: 30px; /* Adjust this value as needed */
 }
 
