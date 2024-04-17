@@ -337,13 +337,13 @@ span {
 @media screen and (max-width: 480px) {
     .home {
         margin-top: 10px;
-        height: 120vh;
+        height: 150vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        margin-top: 10vh;
+        margin-top: 50vh;
     }
 
     .home-img {
