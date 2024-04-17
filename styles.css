@@ -339,7 +339,7 @@ span {
 @media screen and (max-width: 480px) {
     .home {
         margin-top: 20px;
-        height: 120vh;
+       
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -393,7 +393,7 @@ span {
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .home {
-        margin-top: 20px;
+        
         height: 120vh;
         display: flex;
         justify-content: center;
