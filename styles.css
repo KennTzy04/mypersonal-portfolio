@@ -12,7 +12,7 @@
 }
 
 :root {
-    --bg-color: #191f36;
+    --bg-color: #101011;
     --snd-bg-color: #262840;
     --text-color: #fff;
     --main-color: #59b2f4;
@@ -42,7 +42,6 @@ html::-webkit-scrollbar-thumb {
 }
 
 /* Header Styles */
-
 .header {
     position: fixed;
     top: 0;
@@ -63,7 +62,7 @@ html::-webkit-scrollbar-thumb {
     color: var(--main-color);
     font-weight: 800;
     cursor: pointer;
-    transform: 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .logo:hover {
@@ -79,7 +78,7 @@ html::-webkit-scrollbar-thumb {
     color: var(--text-color);
     margin-left: 4rem;
     font-weight: 500;
-    transition: 0.3s ease;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
     border-bottom: 3px solid transparent;
 }
 
@@ -88,7 +87,6 @@ html::-webkit-scrollbar-thumb {
     color:  var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
-
 
 #menu-icon {
     font-size: 3.6rem;
@@ -139,6 +137,7 @@ section {
 /* Home Section Styles */
 
 .home {
+   
     height: 110vh;
     display: flex;
     justify-content: center;
@@ -333,6 +332,7 @@ span {
 
 @media screen and (max-width: 480px) {
     .home {
+        margin-top: 10px;
         height: 110vh;
         display: flex;
         flex-direction: column;
@@ -512,13 +512,13 @@ span {
 
 .about {
     text-align: center;
-    background: var(--bg-color); 
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background: var(--snd-bg-color);
+    background: var(--bg-color);
     padding-bottom: 6rem;
 }
 
@@ -1421,7 +1421,7 @@ span {
     height: 100vh;
     min-height: auto;
     padding-bottom: 4rem;
-    background: var(--snd-bg-color);
+    background: var(--bg-color)
 }
 
 .skills h2 {
@@ -1546,8 +1546,8 @@ span {
     .skills-row .skills-column {
         flex: 0 0 auto; 
         width: 100%;
-        max-height: 140vh;
-        margin-bottom: 2rem; 
+        max-height: 100vh;
+        margin-bottom: 6rem; 
     }
     .skills-column .title, 
     .skills-content .progress h3 {
@@ -1774,7 +1774,8 @@ span {
 @media screen and (max-width: 480px) {
     .education {
         padding-bottom: 3rem;
-        max-height: 140vh;;
+        max-height: 140vh;
+        margin-top: 50vh;
     }
 
     .education h2 {
@@ -1805,7 +1806,8 @@ span {
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .education {
         padding-bottom: 4rem;
-        max-height: 140vh;;
+        max-height: 140vh;
+        margin-top: 50vh;
     }
 
     .education h2 {
@@ -1933,7 +1935,7 @@ span {
     gap: 3rem;
     padding-left: 30px;
     margin-top: 130px;
-    background: var(--snd-bg-color);
+    background: var(--bg-color)
 }
 
 .contact-text h2 {
@@ -1979,7 +1981,7 @@ span {
 }
 
 .contact-text p {
-    color: var(--snd-bg-color);
+    color: var(--bg-color);
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 3rem;
@@ -2131,6 +2133,7 @@ span {
     color:white;
     font-weight: 300;
     margin-top: 10px;
+    background-color: var(--main-color);
 }
 
 .top {
