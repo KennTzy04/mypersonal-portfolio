@@ -108,7 +108,7 @@ section {
     }
     .navbar {
         position: absolute;
-        top: 102%;
+        top: 100%;
         right: 0;
         width: 100;
         border-left: 3px solid var(--main-color);
@@ -184,7 +184,7 @@ span {
 }
 
 .home-img {
-    border-radius: 50%;
+    border-radius: 40%;
     margin-top: 30px; /* Adjust this value as needed */
 }
 
@@ -340,7 +340,7 @@ span {
 @media screen and (max-width: 480px) {
     .home {
         margin-top: 10px;
-        height: 130vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -394,7 +394,7 @@ span {
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .home {
-        height: 110vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -435,7 +435,7 @@ span {
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
     .home {
-        height: 110vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -476,7 +476,7 @@ span {
 
 @media screen and (min-width: 1280px) {
     .home {
-        height: 110vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
