@@ -108,7 +108,7 @@ section {
     }
     .navbar {
         position: absolute;
-        top: 102%;
+        top: 100%;
         right: 0;
         width: 100;
         border-left: 3px solid var(--main-color);
@@ -142,7 +142,7 @@ section {
 
 .home {
    
-    height: 110vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,8 +184,10 @@ span {
 }
 
 .home-img {
-    border-radius: 50%;
+    border-radius: 40%;
+    margin-top: 30px; /* Adjust this value as needed */
 }
+
 .home-img img {
     position: relative;
     top: 4rem;
@@ -195,13 +197,13 @@ span {
     cursor: pointer;
     transition: 0.4s ease;
     height: auto;
+    margin-bottom: 10px; /* Adjust this value as needed */
 }
 
 .home-img img:hover {
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color),
                 0 0 100px var(--main-color),
-    
 }
 
 .home-content p {
@@ -210,6 +212,7 @@ span {
     line-height: 1.5;
     max-width: 1000px;
 }
+
 
 .social-icon a {
     display: inline-flex;
@@ -337,13 +340,13 @@ span {
 @media screen and (max-width: 480px) {
     .home {
         margin-top: 10px;
-        height: 150vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        margin-top: 50vh;
+        margin-top: 50px
     }
 
     .home-img {
@@ -391,7 +394,7 @@ span {
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .home {
-        height: 110vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -432,7 +435,7 @@ span {
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
     .home {
-        height: 110vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -473,7 +476,7 @@ span {
 
 @media screen and (min-width: 1280px) {
     .home {
-        height: 110vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -671,6 +674,7 @@ span {
     .about {
         padding-bottom: 3rem;
         margin-top: 50vh;
+        height: 110vh;
     }
 
     .about h2 {
