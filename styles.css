@@ -185,7 +185,9 @@ span {
 
 .home-img {
     border-radius: 50%;
+    margin-top: 50px; /* Adjust this value as needed */
 }
+
 .home-img img {
     position: relative;
     top: 4rem;
@@ -195,13 +197,13 @@ span {
     cursor: pointer;
     transition: 0.4s ease;
     height: auto;
+    margin-bottom: 20px; /* Adjust this value as needed */
 }
 
 .home-img img:hover {
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color),
                 0 0 100px var(--main-color),
-    
 }
 
 .home-content p {
@@ -210,6 +212,7 @@ span {
     line-height: 1.5;
     max-width: 1000px;
 }
+
 
 .social-icon a {
     display: inline-flex;
@@ -337,13 +340,13 @@ span {
 @media screen and (max-width: 480px) {
     .home {
         margin-top: 10px;
-        height: 150vh;
+        height: 130vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        margin-top: 50vh;
+        margin-top: 50px
     }
 
     .home-img {
@@ -671,6 +674,7 @@ span {
     .about {
         padding-bottom: 3rem;
         margin-top: 50vh;
+        height: 110vh;
     }
 
     .about h2 {
