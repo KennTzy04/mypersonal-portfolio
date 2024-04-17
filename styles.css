@@ -339,7 +339,7 @@ span {
 
 @media screen and (max-width: 480px) {
     .home {
-        margin-top: 20px;
+        margin-top: 30px;
         height: 150vh;
         display: flex;
         flex-direction: column;
@@ -394,7 +394,7 @@ span {
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .home {
-        margin-top: 20px;
+        margin-top: 30px;
         height: 120vh;
         display: flex;
         justify-content: center;
@@ -436,6 +436,7 @@ span {
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
     .home {
+        margin-top: 30px;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -477,6 +478,7 @@ span {
 
 @media screen and (min-width: 1280px) {
     .home {
+        margin-top: 30px;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -520,6 +522,7 @@ span {
 /* About Section Styles */
 
 .about {
+    margin-top: 5px;
     text-align: center;
     display: flex;
     justify-content: center;
