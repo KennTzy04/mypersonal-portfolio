@@ -12,7 +12,7 @@
 }
 
 :root {
-    --bg-color: #101011;
+    --bg-color: #191f36;
     --snd-bg-color: #262840;
     --text-color: #fff;
     --main-color: #59b2f4;
@@ -142,7 +142,7 @@ section {
 
 .home {
    
-    height: 140vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,20 +184,20 @@ span {
 }
 
 .home-img {
-    border-radius: 50%;
-    margin-top: 60px; /* Adjust this value as needed */
+    border-radius: 40%;
+    margin-top: 30px; /* Adjust this value as needed */
 }
 
 .home-img img {
     position: relative;
-    top: 3rem;
+    top: 4rem;
     width: 32vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     transition: 0.4s ease;
     height: auto;
-    margin-bottom: 20px; /* Adjust this value as needed */
+    margin-bottom: 10px; /* Adjust this value as needed */
 }
 
 .home-img img:hover {
@@ -339,39 +339,23 @@ span {
 
 @media screen and (max-width: 480px) {
     .home {
-        margin-top: 30px;
-        height: 150vh;
+        margin-top: 10px;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        margin-top: 50px;
+        margin-top: 50px
     }
 
     .home-img {
-        border-radius: 50%;
-        margin-top: 50px; /* Adjust this value as needed */
         order: -1;
     }
 
     .home-img img {
-        position: relative;
-        top: 3rem;
         width: 80vw;
-        border-radius: 50%;
-        box-shadow: 0 0 25px var(--main-color);
-        cursor: pointer;
-        transition: 0.4s ease;
-        height: auto;
         margin: 0 auto;
-        margin-bottom: 20px; /* Adjust this value as needed */
-    }
-
-    .home-img img:hover {
-        box-shadow: 0 0 25px var(--main-color),
-                    0 0 50px var(--main-color),
-                    0 0 100px var(--main-color),
     }
 
     .home-content {
@@ -391,9 +375,6 @@ span {
 
     .home-content p {
         font-size: 1.5rem;
-        font-weight: 500;
-        line-height: 1.5;
-        max-width: 1000px;
     }
 
     .social-icon a {
@@ -413,8 +394,7 @@ span {
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .home {
-        margin-top: 30px;
-        height: 120vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -455,7 +435,6 @@ span {
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
     .home {
-        margin-top: 30px;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -497,7 +476,6 @@ span {
 
 @media screen and (min-width: 1280px) {
     .home {
-        margin-top: 30px;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -541,15 +519,14 @@ span {
 /* About Section Styles */
 
 .about {
-    margin-top: 5px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background: var(--bg-color);
-    padding-bottom: 4rem;
+    background: var(--snd-bg-color);
+    padding-bottom: 6rem;
 }
 
 .about h2 {
@@ -696,8 +673,8 @@ span {
 @media screen and (max-width: 480px) {
     .about {
         padding-bottom: 3rem;
-        margin-top: 20px;
-        height: 100vh;
+        margin-top: 50vh;
+        height: 110vh;
     }
 
     .about h2 {
@@ -1457,10 +1434,11 @@ span {
 /* SKILLS Section Styles */
 
 .skills {
-    height: 100vh;
+    max-height: 200vh;
+    height: 140vh;
     min-height: auto;
     padding-bottom: 4rem;
-    background: var(--bg-color)
+    background:var(--snd-bg-color);
 }
 
 .skills h2 {
@@ -1535,7 +1513,7 @@ span {
 .skills-content .progress .bar span {
     display: block;
     height: 100%;
-    border-radius: .2rem;
+    border-radius: .3rem;
     background: var(--main-color);
 }
 
@@ -1585,7 +1563,7 @@ span {
     .skills-row .skills-column {
         flex: 0 0 auto; 
         width: 100%;
-    
+        margin-bottom: 6rem; 
         
     }
     .skills-column .title, 
@@ -1630,8 +1608,9 @@ span {
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .skills {
         padding-bottom: 4rem;
-        max-height: 140vh;
-        margin-top: 50vh;
+        height: 100px;
+        max-height: 200vh;
+        height: 140vh;
     }
 
     .skills h2 {
@@ -1658,8 +1637,8 @@ span {
 @media screen and (min-width: 769px) and (max-width: 1279px) {
     .skills {
         padding-bottom: 5rem;
-        min-height: 140vh; 
-        margin-top: 50vh;
+        max-height: 200vh;
+        height: 140vh;
     }
 
     .skills h2 {
@@ -1686,8 +1665,8 @@ span {
 @media screen and (min-width: 1280px) {
     .skills {
         padding-bottom: 6rem;
-        min-height: 140vh; 
-        margin-top: 50vh;
+        max-height: 200vh;
+        height: 140vh;
     }
 
     .skills h2 {
@@ -1816,7 +1795,7 @@ span {
 @media screen and (max-width: 480px) {
     .education {
         padding-bottom: 3rem;
-        max-height: 140vh;
+        min-height: 100vh; 
         margin-top: 100vh;
     }
 
@@ -1848,7 +1827,7 @@ span {
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .education {
         padding-bottom: 4rem;
-        max-height: 140vh;
+        min-height: 100vh; 
         margin-top: 100vh;
     }
 
@@ -1880,7 +1859,7 @@ span {
 @media screen and (min-width: 769px) and (max-width: 1279px) {
     .education {
         padding-bottom: 5rem;
-        max-height: 140vh;
+        min-height: 100vh; 
         margin-top: 100vh;
 
     }
@@ -1913,7 +1892,7 @@ span {
 @media screen and (min-width: 1280px) {
     .education {
         padding-bottom: 6rem;
-        min-height: 140vh; 
+        min-height: 100vh; 
         margin-top: 100vh;
 
     }
@@ -1956,7 +1935,7 @@ span {
     gap: 3rem;
     padding-left: 30px;
     margin-top: 130px;
-    background: var(--bg-color)
+    background: var(--snd-bg-color)
 }
 
 .contact-text h2 {
@@ -2002,7 +1981,7 @@ span {
 }
 
 .contact-text p {
-    color: var(--bg-color);
+    color: var(--snd-bg-color);
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 3rem;
@@ -2154,7 +2133,7 @@ span {
     color:white;
     font-weight: 300;
     margin-top: 10px;
-    background-color: var(--main-color);
+    background-color: var(--bg-color);
 }
 
 .top {
