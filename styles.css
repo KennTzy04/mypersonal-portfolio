@@ -549,7 +549,7 @@ span {
     flex-direction: column;
     gap: 2rem;
     background: var(--bg-color);
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
 }
 
 .about h2 {
