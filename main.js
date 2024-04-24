@@ -44,8 +44,8 @@ const sr = ScrollReveal({
 
 // Apply ScrollReveal animations to elements
 sr.reveal('.home-content, .heading', { origin: 'top' });
-sr.reveal('.home-img, .services-container, .skills-box .skills-content, .education-box .education-content, .education-column .education-box, .contact form, .contact-list h3, .contact-text h5, .contact-text h6', { origin: 'bottom' });
-sr.reveal('.home-content h1, .about, .education-column .title,.skills-column .title, .contact-text h4, .contact-text p', { origin: 'left' });
+sr.reveal('.home-img, .services-container, .skills-box .skills-content, .education-box .education-content, .education-column .education-box, .contact form, .contact-list h3, .contact-text h5, .contact-text h6 , .services-list', { origin: 'bottom' });
+sr.reveal('.home-content h1, .about, .education-column .title,.skills-column .title, .contact-text h4, .contact-text p,' , { origin: 'left' });
 sr.reveal('.home-content p, .about-content, .contact-icons', { origin: 'right' });
 
 // Select form and message elements after DOMContentLoaded
