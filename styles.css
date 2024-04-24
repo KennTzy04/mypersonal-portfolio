@@ -12,7 +12,7 @@
 }
 
 :root {
-    --bg-color: #191f36;
+    --bg-color: #171120;
     --snd-bg-color: #262840;
     --text-color: #fff;
     --main-color: #59b2f4;
@@ -525,7 +525,7 @@ span {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background: var(--snd-bg-color);
+    background: var(--bg-color);
     padding-bottom: 6rem;
 }
 
@@ -910,72 +910,87 @@ span {
 
 /* Services Section Styles */
 
-.services {
+
+#services {  
+    color: var(--text-color);
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
     text-align: center;
-    background: var(--bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    padding-bottom: 5rem;
-}
-
-.service-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-.services h2 {
-    margin-bottom: 3rem;
-    font-size: 3.5rem;
 }
 
 .services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 90px;
 }
 
-
-.services-box {
-    padding: 3rem 25rem 5rem;
-    border-radius: 5rem;
-    text-align: center;
-    transition: all 0.3s ease;
-    font-size: 1.5rem;
-    margin: 1 2rem 2rem;
-    border: 1px solid var(--main-color);
-    cursor: pointer;
-    box-sizing: border-box;
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
   
 }
-.services-box:hover {
-    transform: translateY(-15px);
-    background-color: var(--bg-color);
-    color: var(--main-color);
-}
 
-.services-box i {
-    font-size: 12rem;
-    color: var(--main-color);
-    margin-bottom: 4rem;
-}
-
-.service-info h3 {
-    font-size: 4.5rem;
-    margin-bottom: 1rem;
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
 
 }
 
-.services-box p {
-    font-size: 2.5rem;
-    margin-bottom: 5rem;
-    color: var(--bg-color);
+.services-list div {
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px var(--main-color),
+                1px 1px 30px #0053b8f7;
+    border: 1px solid #007bff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+.services-list div:hover {
+    background-color: var(--snd-bg-color);
+    transform: scale(1.05);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    cursor: pointer; 
+}
+
+.services-list div.clicked {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    cursor: pointer; 
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+    cursor: pointer; /* Add cursor pointer to the "Read More" link */
+}
+
+
 
 /* Popup Styles */
 
@@ -1024,7 +1039,8 @@ span {
 .popup-content6 h2 {
     font-size: 3.4rem; 
     color: var(--main-color); 
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
+    text-align: center;
     
 }
 
@@ -1434,11 +1450,9 @@ span {
 /* SKILLS Section Styles */
 
 .skills {
-    max-height: 300vh;
-    height: 150vh;
     min-height: auto;
     padding-bottom: 4rem;
-    background:var(--snd-bg-color);
+    background:var(--bg-color)
 }
 
 .skills h2 {
@@ -1610,8 +1624,7 @@ span {
     .skills {
         padding-bottom: 4rem;
         height: 100px;
-        max-height: 300vh;
-        height: 150vh;
+    }
     }
 
     .skills h2 {
@@ -1633,13 +1646,10 @@ span {
     .skills-content .progress .bar {
         height: 2.3rem;
     }
-}
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
     .skills {
         padding-bottom: 5rem;
-        max-height: 300vh;
-        height: 150vh;
     }
 
     .skills h2 {
@@ -1666,8 +1676,6 @@ span {
 @media screen and (min-width: 1280px) {
     .skills {
         padding-bottom: 6rem;
-        max-height: 300vh;
-        height: 150vh;
     }
 
     .skills h2 {
@@ -1695,8 +1703,9 @@ span {
 /* EDUCATION Section Styles */
 
 .education {
-    height: 100vh;
     display: flex;
+    min-height: 80%; 
+    margin-top: 80%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -1796,8 +1805,9 @@ span {
 @media screen and (max-width: 480px) {
     .education {
         padding-bottom: 3rem;
-        min-height: 120vh; 
-        margin-top: 100vh;
+        min-height: 80%; 
+        margin-top: 80%;
+     
     }
 
     .education h2 {
@@ -1828,8 +1838,9 @@ span {
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .education {
         padding-bottom: 4rem;
-        min-height: 100vh; 
-        margin-top: 100vh;
+        min-height: 80%; 
+        margin-top: 80%;
+  
     }
 
     .education h2 {
@@ -1860,8 +1871,8 @@ span {
 @media screen and (min-width: 769px) and (max-width: 1279px) {
     .education {
         padding-bottom: 5rem;
-        min-height: 100vh; 
-        margin-top: 100vh;
+        min-height: 80%; 
+        margin-top: 80%;
 
     }
 
@@ -1893,8 +1904,8 @@ span {
 @media screen and (min-width: 1280px) {
     .education {
         padding-bottom: 6rem;
-        min-height: 100vh; 
-        margin-top: 100vh;
+        min-height: 80%; 
+        margin-top: 80%;
 
     }
 
@@ -1936,7 +1947,7 @@ span {
     gap: 3rem;
     padding-left: 30px;
     margin-top: 130px;
-    background: var(--snd-bg-color)
+    background: var(--bg-color);
 }
 
 .contact-text h2 {
@@ -1963,6 +1974,7 @@ span {
     font-size: 35px;
     font-weight: 600;
     text-align: center;
+    margin-bottom: 5.5rem;
 }
 
 .contact-text h5 {
@@ -2134,7 +2146,7 @@ span {
     color:white;
     font-weight: 300;
     margin-top: 10px;
-    background-color: var(--bg-color);
+    background-color:var(--snd-bg-color);
 }
 
 .top {
